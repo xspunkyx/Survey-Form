@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="./style.css">
+
+  
+</head>
+
+<body>
+
+  <!-- LandingPage -->
+<h1 id="title">Survey Form </h1>
+<p id="description">
+  <strong><u>Product Review</u></strong> </p>
+
+  <!-- Survey Form -->
+  <form id= "survey-form">
+    
+    <!--Name Label -->
+    
+    <label id="name-label" for=name> Name</label>
+    <input id="name" name="name" type="text" placeholder="Your Name" required><br>
+    
+    <!-- Email Label -->
+    
+    <label id="email-label" for="email">Email</label>
+    <input id="email" name="email"
+           type = "email" placeholder="Your Email" required><br>
+    
+    <!-- Product ID # -->
+    
+  <label id="id-number-label" for="id-number">Product ID Number</label>
+ 
+    <input id="id-number" name="id-number" type="text" placeholder="Product Number" maxlength="6" required><br>
+  <label id="number-label" 
+        
+         for="age">What's your age?</label>
+  <input id="number" name="age" type="number" placeholder="Age" min="1" max="99"><br>
+    
+    <label id="gender" for="gender"> Gender?</label> <br>
+     <label for="male"><input id="male" type="radio" name="gender" value="male"> Male</label>
+    
+    <label for="female"><input id="female" type="radio" value="female" name="gender"> Female</label><br>
+   
+        
+        
+        
+    <label id="rating"
+           for="rating"> What would you rate our product?</label>
+    <select id="dropdown" name="rating">
+      <option selected disabled> Select a rating</option>
+      <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+      <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+  </select><br>
+    
+    <label id="product-purchased-label" for="product-purchased"> What product did you purchase? </label>
+    
+    <input id="product-purchased" name="product-purchased" type="text" placeholder="Product" required><br><br>
+    
+    <label id="Recommendation" for="recommendation"> Would you recommend this product to others? </label>
+    <ul>
+      <li><label class="positive"> Yes <input class="shifting" name="shifting" type="radio" value="1"></label></li>
+      <li><label class="negative"> No <input class="shifting" name="shifting" type="radio" value="2"></label></li>
+    </ul><br>
+
+<label id="platform" for="platform"> What platform led you to buy our product? <br>(Select one or more of the following media platforms)</label>
+<br>
+
+  <input type="checkbox" name="snapchat" value="snapchat" checked> Snapchat<br>
+  <input type="checkbox" name="facebook" value="facebook"> Facebook<br>
+  <input type="checkbox" name="instagram" value="instagram">  Instagram<br>
+  <input type="checkbox" name="twitter" value="Twitter"> Twitter<br>
+  
+<label class="other"> Others: <input id="other" class="factors" name="factors" type="text" placeholder="Please Specify">
+  <br>
+  <label id="improvements" for="improvements"> What can we do to improve our product? </label><br>
+  
+  <textarea id="improvements" name="improvements" placeholder="Additional improvements"> </textarea>
+  <br>
+  
+  
+  <button id="submit" type="submit">Submit</button>
+</form>
+  
+  
+
+</body>
+
+</html>
